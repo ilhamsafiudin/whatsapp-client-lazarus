@@ -1,0 +1,210 @@
+object frmMain: TfrmMain
+  Left = 429
+  Height = 463
+  Top = 126
+  Width = 449
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'App WA Client - Wak Ilham'
+  ClientHeight = 463
+  ClientWidth = 449
+  KeyPreview = True
+  Position = poScreenCenter
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 320
+    Top = 0
+    Width = 449
+    ActivePage = TabSheet1
+    Align = alTop
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Send Message'
+      ClientHeight = 292
+      ClientWidth = 441
+      object btnSend1: TButton
+        Left = 341
+        Height = 25
+        Top = 240
+        Width = 75
+        Caption = 'Send'
+        OnClick = btnSend1Click
+        TabOrder = 0
+      end
+      object mMsg1: TMemo
+        Left = 24
+        Height = 136
+        Top = 88
+        Width = 392
+        TabOrder = 1
+      end
+      object ePhone1: TEdit
+        Left = 24
+        Height = 23
+        Top = 32
+        Width = 392
+        NumbersOnly = True
+        TabOrder = 2
+      end
+      object Label1: TLabel
+        Left = 24
+        Height = 15
+        Top = 16
+        Width = 74
+        Caption = 'Number (WA)'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 24
+        Height = 15
+        Top = 72
+        Width = 46
+        Caption = 'Message'
+        ParentColor = False
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Send Group Message'
+      ClientHeight = 292
+      ClientWidth = 441
+      object btnSend2: TButton
+        Left = 341
+        Height = 25
+        Top = 240
+        Width = 75
+        Caption = 'Send'
+        OnClick = btnSend2Click
+        TabOrder = 0
+      end
+      object mMsg2: TMemo
+        Left = 24
+        Height = 80
+        Top = 144
+        Width = 392
+        TabOrder = 1
+      end
+      object eGroupID1: TEdit
+        Left = 24
+        Height = 23
+        Top = 32
+        Width = 392
+        TabOrder = 2
+      end
+      object Label3: TLabel
+        Left = 24
+        Height = 15
+        Top = 16
+        Width = 104
+        Caption = 'Group ID (Optional)'
+        ParentColor = False
+      end
+      object Label4: TLabel
+        Left = 24
+        Height = 15
+        Top = 128
+        Width = 46
+        Caption = 'Message'
+        ParentColor = False
+      end
+      object eGroupName1: TEdit
+        Left = 24
+        Height = 23
+        Top = 88
+        Width = 392
+        TabOrder = 3
+      end
+      object Label8: TLabel
+        Left = 24
+        Height = 15
+        Top = 72
+        Width = 98
+        Caption = 'Group Name (WA)'
+        ParentColor = False
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Send Image (URL)'
+      ClientHeight = 292
+      ClientWidth = 441
+      OnContextPopup = TabSheet3ContextPopup
+      object btnSend3: TButton
+        Left = 341
+        Height = 25
+        Top = 240
+        Width = 75
+        Caption = 'Send'
+        OnClick = btnSend3Click
+        TabOrder = 0
+      end
+      object mMsg3: TMemo
+        Left = 24
+        Height = 80
+        Top = 144
+        Width = 392
+        MaxLength = 100
+        TabOrder = 1
+      end
+      object eURL1: TEdit
+        Left = 24
+        Height = 23
+        Top = 88
+        Width = 392
+        TabOrder = 2
+      end
+      object Label5: TLabel
+        Left = 24
+        Height = 15
+        Top = 72
+        Width = 65
+        Caption = 'Image (URL)'
+        ParentColor = False
+      end
+      object Label6: TLabel
+        Left = 24
+        Height = 15
+        Top = 128
+        Width = 42
+        Caption = 'Caption'
+        ParentColor = False
+      end
+      object ePhone2: TEdit
+        Left = 24
+        Height = 23
+        Top = 32
+        Width = 392
+        NumbersOnly = True
+        TabOrder = 3
+      end
+      object Label7: TLabel
+        Left = 24
+        Height = 15
+        Top = 16
+        Width = 74
+        Caption = 'Number (WA)'
+        ParentColor = False
+      end
+    end
+  end
+  object mLog: TMemo
+    Left = 0
+    Height = 120
+    Top = 320
+    Width = 449
+    Align = alClient
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 440
+    Width = 449
+    Panels = <    
+      item
+        Text = '@ 2022 - Wak Ilham'
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+end
