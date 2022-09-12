@@ -40,8 +40,6 @@ type
     procedure btnSend1Click(Sender: TObject);
     procedure btnSend2Click(Sender: TObject);
     procedure btnSend3Click(Sender: TObject);
-    procedure TabSheet3ContextPopup(Sender: TObject; MousePos: TPoint;
-      var Handled: Boolean);
   private
   public
 
@@ -120,12 +118,6 @@ begin
               'caption=' + EncodeURLElement(mMsg3.Text);
    Data := requestdata(API_URL + '/send-image', Params);
    mLog.Lines.Add('log send image: ' + Data);
-end;
-
-procedure TfrmMain.TabSheet3ContextPopup(Sender: TObject; MousePos: TPoint;
-  var Handled: Boolean);
-begin
-
 end;
 
 end.
