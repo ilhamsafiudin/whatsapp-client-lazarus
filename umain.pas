@@ -58,6 +58,7 @@ implementation
 
 { TfrmMain }
 
+//method post
 function requestdata(Url: string; Params: string): string;
 var
   Client: TFPHttpClient;
@@ -85,6 +86,7 @@ begin
    end;
 end;
 
+//kirim pesan
 procedure TfrmMain.btnSend1Click(Sender: TObject);
 var
   Data: string;
@@ -96,6 +98,7 @@ begin
    mLog.Lines.Add('log send message: ' + Data);
 end;
 
+//kirim ke grup
 procedure TfrmMain.btnSend2Click(Sender: TObject);
 var
   Data: string;
@@ -108,6 +111,7 @@ begin
    mLog.Lines.Add('log send group message: ' + Data);
 end;
 
+//kirim foto dengan url
 procedure TfrmMain.btnSend3Click(Sender: TObject);
 var
   Data: string;
